@@ -1,0 +1,119 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.thank-you {
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+
+.yourscore {
+    font-size: 14px;
+}
+
+.score-table {
+    width: 100%;
+}
+
+/* Common base for all tables */
+table, .secondary-table, .ter {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 15px;
+    color: #333;
+    table-layout: fixed;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+/* General TH/TD styling */
+table th, table td,
+.secondary-table th, .secondary-table td,
+.ter th, .ter td {
+    padding: 10px;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Remove vertical middle borders */
+table th:not(:first-child):not(:last-child),
+table td:not(:first-child):not(:last-child),
+.secondary-table th:not(:first-child):not(:last-child),
+.secondary-table td:not(:first-child):not(:last-child),
+.ter th:not(:first-child):not(:last-child),
+.ter td:not(:first-child):not(:last-child) {
+    border-left: none;
+    border-right: none;
+}
+
+/* Table 1 (Score + Correct Answers) */
+table th {
+    background-color: #e9e9ec;
+    font-weight: bold;
+}
+table td {
+    background-color: #e9e9ec;
+}
+
+/* Table 2 (Incorrect + Email) */
+.secondary-table th {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+.secondary-table td {
+    background-color: #ffffff;
+}
+
+/* Table 3 (Time Taken) */
+.ter th {
+    background-color: #e9e9ec;
+    font-weight: bold;
+}
+.ter td {
+    background-color: #e9e9ec;
+}
+
+/* Remove double borders between tables */
+.score-table table + table,
+.score-table .secondary-table + .ter {
+    border-top: none;
+}
+
+/* Result Section Styling */
+.result {
+    font-size: 17x;
+    margin-top: 20px;
+}
+.Tier{
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #444444;
+}
+
+.proprofs {
+    color: #0073e6;
+    font-weight: bold;
+}
